@@ -11,6 +11,7 @@ function Navbar(){
                 <Link to="/">Home</Link>
                 <Link to="/chatbot">Chatbot</Link>
                 <Link to="/login">Login</Link>
+                <Link to="/dashboard">Dashboard</Link>
             </div>
         </nav>
     );
