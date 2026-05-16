@@ -12,7 +12,14 @@ function Navbar(){
                 <Link to="/chatbot">Chatbot</Link>
                 <Link to="/login">Login</Link>
                 <Link to="/dashboard">Dashboard</Link>
+                <Link to="/faq">FAQ</Link>
             </div>
+
+            <Link to="/chatbot">
+              <button className="chat-btn">
+                Mulai Chat
+              </button>
+            </Link>
         </nav>
     );
 }
