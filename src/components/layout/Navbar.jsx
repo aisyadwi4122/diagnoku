@@ -1,27 +1,32 @@
 import { Link } from "react-router-dom";
 
-function Navbar(){
-    return (
-        <nav className="navbar">
-            <h1 className="logo">
-                Diagnoku
-            </h1>
+function Navbar() {
+  return (
+    <nav className="navbar">
 
-            <div className="nav-links">
-                <Link to="/">Home</Link>
-                <Link to="/chatbot">Chatbot</Link>
-                <Link to="/login">Login</Link>
-                <Link to="/dashboard">Dashboard</Link>
-                <Link to="/faq">FAQ</Link>
-            </div>
+      <h1 className="logo">
+        DiagnoKu
+      </h1>
 
-            <Link to="/chatbot">
-              <button className="chat-btn">
-                Mulai Chat
-              </button>
-            </Link>
-        </nav>
-    );
+      <div className="nav-links">
+        <Link to="/">Home</Link>
+        <Link to="/chatbot">Chatbot</Link>
+        <Link to="/dashboard">Dashboard</Link>
+        <Link to="/faq">FAQ</Link>
+        <Link to="/contact">Kontak</Link>
+      </div>
+
+      <div className="nav-right">
+        <Link to="/login">
+          <button className="login-btn">
+            Login
+          </button>
+        </Link>
+
+      </div>
+
+    </nav>
+  );
 }
 
 export default Navbar;

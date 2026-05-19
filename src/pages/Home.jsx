@@ -3,6 +3,7 @@ import Footer from "../components/layout/Footer";
 import FeatureCard from "../components/cards/FeatureCard";
 
 import "../styles/global.css";
+import { Link } from "react-router-dom";
 
 function Home() {
     return(
@@ -17,9 +18,12 @@ function Home() {
                     Prediksi awal kesehatan menggunakan AI chatbot.
                 </p>
 
-                <button className="hero-btn">
+                <Link to="/chatbot">
+                 <button className="hero-btn">
                     Mulai Chat
-                </button>
+                 </button>  
+                </Link>
+
             </section>
 
             <section className="features">
